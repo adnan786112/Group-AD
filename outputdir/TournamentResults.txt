@@ -1,0 +1,430 @@
+Game: Connect4, Players: 2, Mode: RANDOM, TotalGames: 100, GamesPerMatchup: 100
+Alpha calculations using Delta Ordinal
+Alpha: 10.0
+	1.000	BasicMCTS
+	0.000	RandomPlayer
+	0.000	RMHC
+	0.000	SuperOSLA
+
+Transition matrix for alpha = 10.0
+1.000	0.000	0.000	0.000	
+0.984	0.000	0.012	0.005	
+1.000	0.000	0.000	0.000	
+1.000	0.000	0.000	0.000	
+B matrix for alpha = 10.0
+4.966	0.984	1.012	1.004	
+0.984	0.968	0.984	0.983	
+1.012	0.984	1.000	1.000	
+1.004	0.983	1.000	0.999	
+The following agents cluster together, and may be considered equivalent: 
+	Cluster for RandomPlayer
+		RandomPlayer
+		RMHC
+		SuperOSLA
+
+Alpha calculations using Win Rate
+Alpha: 10.0
+	1.000	BasicMCTS
+	0.000	RandomPlayer
+	0.000	RMHC
+	0.000	SuperOSLA
+
+Transition matrix for alpha = 10.0
+1.000	0.000	0.000	0.000	
+0.984	0.000	0.012	0.005	
+1.000	0.000	0.000	0.000	
+1.000	0.000	0.000	0.000	
+B matrix for alpha = 10.0
+4.966	0.984	1.012	1.004	
+0.984	0.968	0.984	0.983	
+1.012	0.984	1.000	1.000	
+1.004	0.983	1.000	0.999	
+The following agents cluster together, and may be considered equivalent: 
+	Cluster for RandomPlayer
+		RandomPlayer
+		RMHC
+		SuperOSLA
+
+BasicMCTS got 50.00 points. BasicMCTS won 50.0% of the 100 games of the tournament. BasicMCTS won 100.0% of the 50 games it played during the tournament.
+BasicMCTS got a mean score of 1.00.
+BasicMCTS won 100.0% of the 17 games against RandomPlayer.
+BasicMCTS won 100.0% of the 15 games against RMHC.
+BasicMCTS won 100.0% of the 18 games against SuperOSLA.
+
+RandomPlayer got 8.00 points. RandomPlayer won 8.0% of the 100 games of the tournament. RandomPlayer won 16.0% of the 50 games it played during the tournament.
+RandomPlayer got a mean score of -0.68.
+RandomPlayer won 0.0% of the 17 games against BasicMCTS.
+RandomPlayer won 22.2% of the 18 games against RMHC.
+RandomPlayer won 26.7% of the 15 games against SuperOSLA.
+
+RMHC got 24.00 points. RMHC won 24.0% of the 100 games of the tournament. RMHC won 48.0% of the 50 games it played during the tournament.
+RMHC got a mean score of -0.04.
+RMHC won 0.0% of the 15 games against BasicMCTS.
+RMHC won 77.8% of the 18 games against RandomPlayer.
+RMHC won 58.8% of the 17 games against SuperOSLA.
+
+SuperOSLA got 18.00 points. SuperOSLA won 18.0% of the 100 games of the tournament. SuperOSLA won 36.0% of the 50 games it played during the tournament.
+SuperOSLA got a mean score of -0.28.
+SuperOSLA won 0.0% of the 18 games against BasicMCTS.
+SuperOSLA won 73.3% of the 15 games against RandomPlayer.
+SuperOSLA won 41.2% of the 17 games against RMHC.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+BasicMCTS: Win rate 1.00 +/- 0.000	Mean Ordinal 1.00 +/- 0.00
+RMHC: Win rate 0.48 +/- 0.071	Mean Ordinal 1.52 +/- 0.07
+SuperOSLA: Win rate 0.36 +/- 0.068	Mean Ordinal 1.64 +/- 0.07
+RandomPlayer: Win rate 0.16 +/- 0.052	Mean Ordinal 1.84 +/- 0.05
+
+Alpha-rank by Win Rate
+	BasicMCTS                     	1.00
+	RMHC                          	0.00
+	SuperOSLA                     	0.00
+	RandomPlayer                  	0.00
+
+Alpha-rank by Ordinal Position
+	BasicMCTS                     	1.00
+	RMHC                          	0.00
+	SuperOSLA                     	0.00
+	RandomPlayer                  	0.00
+
+Game: Connect4, Players: 2, Mode: RANDOM, TotalGames: 100, GamesPerMatchup: 100
+Alpha calculations using Delta Ordinal
+Alpha: 10.0
+	1.000	BasicMCTS
+	0.000	RandomPlayer
+	0.000	RMHC
+	0.000	SuperOSLA
+
+Transition matrix for alpha = 10.0
+1.000	0.000	0.000	0.000	
+0.784	0.000	0.009	0.207	
+1.000	0.000	0.000	0.000	
+1.000	0.000	0.000	0.000	
+B matrix for alpha = 10.0
+4.614	0.784	1.007	1.162	
+0.784	0.658	0.784	0.784	
+1.007	0.784	0.999	1.002	
+1.162	0.784	1.002	1.043	
+The following agents cluster together, and may be considered equivalent: 
+	Cluster for RMHC
+		RMHC
+		SuperOSLA
+
+Alpha calculations using Win Rate
+Alpha: 10.0
+	1.000	BasicMCTS
+	0.000	RandomPlayer
+	0.000	RMHC
+	0.000	SuperOSLA
+
+Transition matrix for alpha = 10.0
+1.000	0.000	0.000	0.000	
+0.784	0.000	0.009	0.207	
+1.000	0.000	0.000	0.000	
+1.000	0.000	0.000	0.000	
+B matrix for alpha = 10.0
+4.614	0.784	1.007	1.162	
+0.784	0.658	0.784	0.784	
+1.007	0.784	0.999	1.002	
+1.162	0.784	1.002	1.043	
+The following agents cluster together, and may be considered equivalent: 
+	Cluster for RMHC
+		RMHC
+		SuperOSLA
+
+BasicMCTS got 50.00 points. BasicMCTS won 50.0% of the 100 games of the tournament. BasicMCTS won 100.0% of the 50 games it played during the tournament.
+BasicMCTS got a mean score of 1.00.
+BasicMCTS won 100.0% of the 17 games against RandomPlayer.
+BasicMCTS won 100.0% of the 15 games against RMHC.
+BasicMCTS won 100.0% of the 18 games against SuperOSLA.
+
+RandomPlayer got 5.00 points. RandomPlayer won 5.0% of the 100 games of the tournament. RandomPlayer won 10.0% of the 50 games it played during the tournament.
+RandomPlayer got a mean score of -0.80.
+RandomPlayer won 0.0% of the 17 games against BasicMCTS.
+RandomPlayer won 22.2% of the 18 games against RMHC.
+RandomPlayer won 6.7% of the 15 games against SuperOSLA.
+
+RMHC got 21.00 points. RMHC won 21.0% of the 100 games of the tournament. RMHC won 42.0% of the 50 games it played during the tournament.
+RMHC got a mean score of -0.16.
+RMHC won 0.0% of the 15 games against BasicMCTS.
+RMHC won 77.8% of the 18 games against RandomPlayer.
+RMHC won 41.2% of the 17 games against SuperOSLA.
+
+SuperOSLA got 24.00 points. SuperOSLA won 24.0% of the 100 games of the tournament. SuperOSLA won 48.0% of the 50 games it played during the tournament.
+SuperOSLA got a mean score of -0.04.
+SuperOSLA won 0.0% of the 18 games against BasicMCTS.
+SuperOSLA won 93.3% of the 15 games against RandomPlayer.
+SuperOSLA won 58.8% of the 17 games against RMHC.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+BasicMCTS: Win rate 1.00 +/- 0.000	Mean Ordinal 1.00 +/- 0.00
+SuperOSLA: Win rate 0.48 +/- 0.071	Mean Ordinal 1.52 +/- 0.07
+RMHC: Win rate 0.42 +/- 0.070	Mean Ordinal 1.58 +/- 0.07
+RandomPlayer: Win rate 0.10 +/- 0.042	Mean Ordinal 1.90 +/- 0.04
+
+Alpha-rank by Win Rate
+	BasicMCTS                     	1.00
+	SuperOSLA                     	0.00
+	RMHC                          	0.00
+	RandomPlayer                  	0.00
+
+Alpha-rank by Ordinal Position
+	BasicMCTS                     	1.00
+	SuperOSLA                     	0.00
+	RMHC                          	0.00
+	RandomPlayer                  	0.00
+
+Game: Connect4, Players: 2, Mode: EXHAUSTIVE, TotalGames: 96, GamesPerMatchup: 16
+Alpha calculations using Delta Ordinal
+Alpha: 10.0
+	0.001	BasicMCTS
+	0.999	mcts
+	0.000	osla
+
+Transition matrix for alpha = 10.0
+0.001	0.999	0.000	
+0.001	0.999	0.000	
+0.500	0.500	0.000	
+B matrix for alpha = 10.0
+1.249	1.250	0.500	
+1.250	3.246	0.500	
+0.500	0.500	0.500	
+Alpha calculations using Win Rate
+Alpha: 10.0
+	0.001	BasicMCTS
+	0.999	mcts
+	0.000	osla
+
+Transition matrix for alpha = 10.0
+0.001	0.999	0.000	
+0.001	0.999	0.000	
+0.500	0.500	0.000	
+B matrix for alpha = 10.0
+1.249	1.250	0.500	
+1.250	3.246	0.500	
+0.500	0.500	0.500	
+BasicMCTS got 36.00 points. BasicMCTS won 37.5% of the 96 games of the tournament. BasicMCTS won 56.3% of the 64 games it played during the tournament.
+BasicMCTS got a mean score of 0.13.
+BasicMCTS won 12.5% of the 32 games against mcts.
+BasicMCTS won 100.0% of the 32 games against osla.
+
+mcts got 60.00 points. mcts won 62.5% of the 96 games of the tournament. mcts won 93.8% of the 64 games it played during the tournament.
+mcts got a mean score of 0.88.
+mcts won 87.5% of the 32 games against BasicMCTS.
+mcts won 100.0% of the 32 games against osla.
+
+osla got 0.00 points. osla won 0.0% of the 96 games of the tournament. osla won 0.0% of the 64 games it played during the tournament.
+osla got a mean score of -1.00.
+osla won 0.0% of the 32 games against BasicMCTS.
+osla won 0.0% of the 32 games against mcts.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+mcts: Win rate 0.94 +/- 0.030	Mean Ordinal 1.06 +/- 0.03
+BasicMCTS: Win rate 0.56 +/- 0.062	Mean Ordinal 1.44 +/- 0.06
+osla: Win rate 0.00 +/- 0.000	Mean Ordinal 2.00 +/- 0.00
+
+Alpha-rank by Win Rate
+	mcts                          	1.00
+	BasicMCTS                     	0.00
+	osla                          	0.00
+
+Alpha-rank by Ordinal Position
+	mcts                          	1.00
+	BasicMCTS                     	0.00
+	osla                          	0.00
+
+Game: Connect4, Players: 2, Mode: EXHAUSTIVE, TotalGames: 96, GamesPerMatchup: 16
+Alpha calculations using Delta Ordinal
+Alpha: 10.0
+	0.002	BasicMCTS
+	0.998	mcts
+	0.000	osla
+
+Transition matrix for alpha = 10.0
+0.002	0.998	0.000	
+0.002	0.998	0.000	
+0.500	0.500	0.000	
+B matrix for alpha = 10.0
+1.246	1.250	0.500	
+1.250	3.238	0.500	
+0.500	0.500	0.500	
+Alpha calculations using Win Rate
+Alpha: 10.0
+	0.002	BasicMCTS
+	0.998	mcts
+	0.000	osla
+
+Transition matrix for alpha = 10.0
+0.002	0.998	0.000	
+0.002	0.998	0.000	
+0.500	0.500	0.000	
+B matrix for alpha = 10.0
+1.246	1.250	0.500	
+1.250	3.238	0.500	
+0.500	0.500	0.500	
+BasicMCTS got 38.00 points. BasicMCTS won 39.6% of the 96 games of the tournament. BasicMCTS won 59.4% of the 64 games it played during the tournament.
+BasicMCTS got a mean score of 0.19.
+BasicMCTS won 18.8% of the 32 games against mcts.
+BasicMCTS won 100.0% of the 32 games against osla.
+
+mcts got 58.00 points. mcts won 60.4% of the 96 games of the tournament. mcts won 90.6% of the 64 games it played during the tournament.
+mcts got a mean score of 0.81.
+mcts won 81.3% of the 32 games against BasicMCTS.
+mcts won 100.0% of the 32 games against osla.
+
+osla got 0.00 points. osla won 0.0% of the 96 games of the tournament. osla won 0.0% of the 64 games it played during the tournament.
+osla got a mean score of -1.00.
+osla won 0.0% of the 32 games against BasicMCTS.
+osla won 0.0% of the 32 games against mcts.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+mcts: Win rate 0.91 +/- 0.036	Mean Ordinal 1.09 +/- 0.04
+BasicMCTS: Win rate 0.59 +/- 0.061	Mean Ordinal 1.41 +/- 0.06
+osla: Win rate 0.00 +/- 0.000	Mean Ordinal 2.00 +/- 0.00
+
+Alpha-rank by Win Rate
+	mcts                          	1.00
+	BasicMCTS                     	0.00
+	osla                          	0.00
+
+Alpha-rank by Ordinal Position
+	mcts                          	1.00
+	BasicMCTS                     	0.00
+	osla                          	0.00
+
+Game: Connect4, Players: 2, Mode: EXHAUSTIVE, TotalGames: 96, GamesPerMatchup: 16
+Alpha calculations using Delta Ordinal
+Alpha: 10.0
+	0.007	BasicMCTS
+	0.993	mcts
+	0.000	osla
+
+Transition matrix for alpha = 10.0
+0.007	0.993	0.000	
+0.007	0.993	0.000	
+0.500	0.500	0.000	
+B matrix for alpha = 10.0
+1.237	1.250	0.500	
+1.250	3.210	0.500	
+0.500	0.500	0.500	
+Alpha calculations using Win Rate
+Alpha: 10.0
+	0.007	BasicMCTS
+	0.993	mcts
+	0.000	osla
+
+Transition matrix for alpha = 10.0
+0.007	0.993	0.000	
+0.007	0.993	0.000	
+0.500	0.500	0.000	
+B matrix for alpha = 10.0
+1.237	1.250	0.500	
+1.250	3.210	0.500	
+0.500	0.500	0.500	
+BasicMCTS got 40.00 points. BasicMCTS won 41.7% of the 96 games of the tournament. BasicMCTS won 62.5% of the 64 games it played during the tournament.
+BasicMCTS got a mean score of 0.25.
+BasicMCTS won 25.0% of the 32 games against mcts.
+BasicMCTS won 100.0% of the 32 games against osla.
+
+mcts got 56.00 points. mcts won 58.3% of the 96 games of the tournament. mcts won 87.5% of the 64 games it played during the tournament.
+mcts got a mean score of 0.75.
+mcts won 75.0% of the 32 games against BasicMCTS.
+mcts won 100.0% of the 32 games against osla.
+
+osla got 0.00 points. osla won 0.0% of the 96 games of the tournament. osla won 0.0% of the 64 games it played during the tournament.
+osla got a mean score of -1.00.
+osla won 0.0% of the 32 games against BasicMCTS.
+osla won 0.0% of the 32 games against mcts.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+mcts: Win rate 0.88 +/- 0.041	Mean Ordinal 1.13 +/- 0.04
+BasicMCTS: Win rate 0.63 +/- 0.061	Mean Ordinal 1.38 +/- 0.06
+osla: Win rate 0.00 +/- 0.000	Mean Ordinal 2.00 +/- 0.00
+
+Alpha-rank by Win Rate
+	mcts                          	0.99
+	BasicMCTS                     	0.01
+	osla                          	0.00
+
+Alpha-rank by Ordinal Position
+	mcts                          	0.99
+	BasicMCTS                     	0.01
+	osla                          	0.00
+
+Game: Connect4, Players: 2, Mode: EXHAUSTIVE, TotalGames: 96, GamesPerMatchup: 8
+Alpha calculations using Delta Ordinal
+Alpha: 10.0
+	0.007	BasicMCTS
+	0.993	mcts
+	0.000	osla
+	0.000	rhea
+
+Transition matrix for alpha = 10.0
+0.007	0.993	0.000	0.000	
+0.007	0.993	0.000	0.000	
+0.480	0.480	0.000	0.039	
+0.076	0.924	0.000	0.000	
+B matrix for alpha = 10.0
+1.223	1.301	0.480	0.937	
+1.301	4.044	0.480	0.937	
+0.480	0.480	0.463	0.480	
+0.937	0.937	0.480	0.861	
+Alpha calculations using Win Rate
+Alpha: 10.0
+	0.007	BasicMCTS
+	0.993	mcts
+	0.000	osla
+	0.000	rhea
+
+Transition matrix for alpha = 10.0
+0.007	0.993	0.000	0.000	
+0.007	0.993	0.000	0.000	
+0.480	0.480	0.000	0.039	
+0.076	0.924	0.000	0.000	
+B matrix for alpha = 10.0
+1.223	1.301	0.480	0.937	
+1.301	4.044	0.480	0.937	
+0.480	0.480	0.463	0.480	
+0.937	0.937	0.480	0.861	
+BasicMCTS got 34.00 points. BasicMCTS won 35.4% of the 96 games of the tournament. BasicMCTS won 70.8% of the 48 games it played during the tournament.
+BasicMCTS got a mean score of 0.42.
+BasicMCTS won 25.0% of the 16 games against mcts.
+BasicMCTS won 100.0% of the 16 games against osla.
+BasicMCTS won 87.5% of the 16 games against rhea.
+
+mcts got 44.00 points. mcts won 45.8% of the 96 games of the tournament. mcts won 91.7% of the 48 games it played during the tournament.
+mcts got a mean score of 0.83.
+mcts won 75.0% of the 16 games against BasicMCTS.
+mcts won 100.0% of the 16 games against osla.
+mcts won 100.0% of the 16 games against rhea.
+
+osla got 2.00 points. osla won 2.1% of the 96 games of the tournament. osla won 4.2% of the 48 games it played during the tournament.
+osla got a mean score of -0.92.
+osla won 0.0% of the 16 games against BasicMCTS.
+osla won 0.0% of the 16 games against mcts.
+osla won 12.5% of the 16 games against rhea.
+
+rhea got 16.00 points. rhea won 16.7% of the 96 games of the tournament. rhea won 33.3% of the 48 games it played during the tournament.
+rhea got a mean score of -0.33.
+rhea won 12.5% of the 16 games against BasicMCTS.
+rhea won 0.0% of the 16 games against mcts.
+rhea won 87.5% of the 16 games against osla.
+
+---- Ranking ---- (+/- are standard errors on the mean calculated using a Normal approximation) 
+mcts: Win rate 0.92 +/- 0.040	Mean Ordinal 1.08 +/- 0.04
+BasicMCTS: Win rate 0.71 +/- 0.066	Mean Ordinal 1.29 +/- 0.07
+rhea: Win rate 0.33 +/- 0.068	Mean Ordinal 1.67 +/- 0.07
+osla: Win rate 0.04 +/- 0.029	Mean Ordinal 1.96 +/- 0.03
+
+Alpha-rank by Win Rate
+	mcts                          	0.99
+	BasicMCTS                     	0.01
+	rhea                          	0.00
+	osla                          	0.00
+
+Alpha-rank by Ordinal Position
+	mcts                          	0.99
+	BasicMCTS                     	0.01
+	rhea                          	0.00
+	osla                          	0.00
+

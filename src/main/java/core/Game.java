@@ -14,6 +14,7 @@ import gui.AbstractGUIManager;
 import gui.GUI;
 import gui.GamePanel;
 import players.basicMCTS.BasicMCTSPlayer;
+import players.basicMCTS.groupAD.GroupADBasicMCTSPlayer;
 import players.human.ActionController;
 import players.human.HumanConsolePlayer;
 import players.human.HumanGUIPlayer;
@@ -706,10 +707,11 @@ public class Game {
         ArrayList<AbstractPlayer> players = new ArrayList<>();
         //players.add(new RandomPlayer());
         //players.add(new RandomPlayer());
+        players.add(new GroupADBasicMCTSPlayer());
         players.add(new BasicMCTSPlayer());
        //players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
-        players.add(new HumanGUIPlayer(ac));
+        // players.add(new HumanGUIPlayer(ac));
 
 
         /* Game parameter configuration. Set to null to ignore and use default parameters */

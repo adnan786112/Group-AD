@@ -8,12 +8,12 @@ import players.basicMCTS.BasicTreeNode;
 import java.util.*;
 import static utilities.Utils.noise;
 
-public class BasicTreeNodeX extends BasicTreeNode {
+public class OldBasicTreeNodeX extends BasicTreeNode {
 
     private final BasicMCTSParams params;
     private final Random rnd;
 
-    public BasicTreeNodeX(GroupADBasicMCTSPlayer player, BasicTreeNodeX parent, AbstractGameState state, Random rnd) {
+    public OldBasicTreeNodeX(OldGroupADBasicMCTSPlayer player, OldBasicTreeNodeX parent, AbstractGameState state, Random rnd) {
         super(player, parent, state, rnd);
         this.params = player.getParameters();
         this.rnd = rnd;

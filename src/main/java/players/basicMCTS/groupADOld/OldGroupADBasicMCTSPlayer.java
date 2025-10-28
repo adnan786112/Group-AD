@@ -8,15 +8,15 @@ import players.basicMCTS.BasicMCTSPlayer;
 
 import java.util.Random;
 
-public class GroupADBasicMCTSPlayer extends BasicMCTSPlayer {
+public class OldGroupADBasicMCTSPlayer extends BasicMCTSPlayer {
 
     private final Random localRnd;
 
-    public GroupADBasicMCTSPlayer() {
+    public OldGroupADBasicMCTSPlayer() {
         this(System.currentTimeMillis());
     }
 
-    public GroupADBasicMCTSPlayer(long seed) {
+    public OldGroupADBasicMCTSPlayer(long seed) {
         super(seed);
         getParameters().setRandomSeed(seed);
         localRnd = new Random(seed);
@@ -28,12 +28,12 @@ public class GroupADBasicMCTSPlayer extends BasicMCTSPlayer {
         p.epsilon = 1e-6;
     }
 
-    public GroupADBasicMCTSPlayer(BasicMCTSParams params) {
+    public OldGroupADBasicMCTSPlayer(BasicMCTSParams params) {
         super(params);
         localRnd = new Random(params.getRandomSeed());
     }
 
-    public GroupADBasicMCTSPlayer(BasicMCTSParams params, IStateHeuristic heuristic) {
+    public OldGroupADBasicMCTSPlayer(BasicMCTSParams params, IStateHeuristic heuristic) {
         super(params);
         params.heuristic = heuristic;
         localRnd = new Random(params.getRandomSeed());
@@ -54,10 +54,10 @@ public class GroupADBasicMCTSPlayer extends BasicMCTSPlayer {
     }
 
     @Override
-    public GroupADBasicMCTSPlayer copy() {
+    public OldGroupADBasicMCTSPlayer copy() {
         BasicMCTSParams cp = (BasicMCTSParams) getParameters().copy();
-        if (cp.heuristic == null) return new GroupADBasicMCTSPlayer(cp);
-        return new GroupADBasicMCTSPlayer(cp, cp.heuristic);
+        if (cp.heuristic == null) return new OldGroupADBasicMCTSPlayer(cp);
+        return new OldGroupADBasicMCTSPlayer(cp, cp.heuristic);
     }
 
     @Override

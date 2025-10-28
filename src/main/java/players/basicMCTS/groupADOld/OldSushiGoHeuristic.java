@@ -3,7 +3,7 @@ package players.basicMCTS.groupADOld;
 import core.AbstractGameState;
 import core.interfaces.IStateHeuristic;
 
-public class SushiGoHeuristic implements IStateHeuristic {
+public class OldSushiGoHeuristic implements IStateHeuristic {
 
     @Override
     public double evaluateState(AbstractGameState state, int playerId) {

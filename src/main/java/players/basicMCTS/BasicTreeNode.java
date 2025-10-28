@@ -12,7 +12,7 @@ import static java.util.stream.Collectors.*;
 import static players.PlayerConstants.*;
 import static utilities.Utils.noise;
 
-class BasicTreeNode {
+public class BasicTreeNode {
     // Root node of tree
     BasicTreeNode root;
     // Parent of this node
@@ -55,7 +55,7 @@ class BasicTreeNode {
     /**
      * Performs full MCTS search, using the defined budget limits.
      */
-    void mctsSearch() {
+    public void mctsSearch() {
 
         BasicMCTSParams params = player.getParameters();
 
@@ -285,7 +285,7 @@ class BasicTreeNode {
      *
      * @return - the best AbstractAction
      */
-    AbstractAction bestAction() {
+    public AbstractAction bestAction() {
 
         double bestValue = -Double.MAX_VALUE;
         AbstractAction bestAction = null;

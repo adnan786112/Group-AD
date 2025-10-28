@@ -1,4 +1,4 @@
-package players.basicMCTS.groupADOld;
+package players.basicMCTS.groupADversion2;
 
 import core.AbstractGameState;
 import core.actions.AbstractAction;
@@ -8,12 +8,12 @@ import players.basicMCTS.BasicTreeNode;
 import java.util.*;
 import static utilities.Utils.noise;
 
-public class OldBasicTreeNodeX extends BasicTreeNode {
+public class BasicTreeNodeXversion2 extends BasicTreeNode {
 
     private final BasicMCTSParams params;
     private final Random rnd;
 
-    public OldBasicTreeNodeX(OldGroupADBasicMCTSPlayer player, OldBasicTreeNodeX parent, AbstractGameState state, Random rnd) {
+    public BasicTreeNodeXversion2(GroupADBasicMCTSPlayerversion2 player, BasicTreeNodeXversion2 parent, AbstractGameState state, Random rnd) {
         super(player, parent, state, rnd);
         this.params = player.getParameters();
         this.rnd = rnd;

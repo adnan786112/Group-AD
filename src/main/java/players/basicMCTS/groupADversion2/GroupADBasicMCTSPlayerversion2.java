@@ -1,4 +1,4 @@
-package players.basicMCTS.groupADOld;
+package players.basicMCTS.groupADversion2;
 
 import core.AbstractGameState;
 import core.actions.AbstractAction;
@@ -6,17 +6,18 @@ import core.interfaces.IStateHeuristic;
 import players.basicMCTS.BasicMCTSParams;
 import players.basicMCTS.BasicMCTSPlayer;
 
+import java.util.List;
 import java.util.Random;
 
-public class OldGroupADBasicMCTSPlayer extends BasicMCTSPlayer {
+public class GroupADBasicMCTSPlayerversion2 extends BasicMCTSPlayer {
 
     private final Random localRnd;
 
-    public OldGroupADBasicMCTSPlayer() {
+    public GroupADBasicMCTSPlayerversion2() {
         this(System.currentTimeMillis());
     }
 
-    public OldGroupADBasicMCTSPlayer(long seed) {
+    public GroupADBasicMCTSPlayerversion2(long seed) {
         super(seed);
         getParameters().setRandomSeed(seed);
         localRnd = new Random(seed);
@@ -27,12 +28,12 @@ public class OldGroupADBasicMCTSPlayer extends BasicMCTSPlayer {
         p.epsilon = 1e-6;
     }
 
-    public OldGroupADBasicMCTSPlayer(BasicMCTSParams params) {
+    public GroupADBasicMCTSPlayerversion2(BasicMCTSParams params) {
         super(params);
         localRnd = new Random(params.getRandomSeed());
     }
 
-    public OldGroupADBasicMCTSPlayer(BasicMCTSParams params, IStateHeuristic heuristic) {
+    public GroupADBasicMCTSPlayerversion2(BasicMCTSParams params, IStateHeuristic heuristic) {
         super(params);
         params.heuristic = heuristic;
         localRnd = new Random(params.getRandomSeed());
@@ -49,16 +50,16 @@ public class OldGroupADBasicMCTSPlayer extends BasicMCTSPlayer {
 
     @Override
     public AbstractAction _getAction(AbstractGameState gameState, List<AbstractAction> actions) {
-        BasicTreeNodeX root = new BasicTreeNodeX(this, null, gameState, new Random(getParameters().getRandomSeed()));
+        BasicTreeNodeXversion2 root = new BasicTreeNodeXversion2(this, null, gameState, new Random(getParameters().getRandomSeed()));
         root.mctsSearch();
         return root.bestAction();
     }
 
     @Override
-    public OldGroupADBasicMCTSPlayer copy() {
+    public GroupADBasicMCTSPlayerversion2 copy() {
         BasicMCTSParams cp = (BasicMCTSParams) getParameters().copy();
-        if (cp.heuristic == null) return new OldGroupADBasicMCTSPlayer(cp);
-        return new OldGroupADBasicMCTSPlayer(cp, cp.heuristic);
+        if (cp.heuristic == null) return new GroupADBasicMCTSPlayerversion2(cp);
+        return new GroupADBasicMCTSPlayerversion2(cp, cp.heuristic);
     }
 
     @Override

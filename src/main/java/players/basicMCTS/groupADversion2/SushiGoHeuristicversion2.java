@@ -1,9 +1,9 @@
-package players.basicMCTS.groupADOld;
+package players.basicMCTS.groupADversion2;
 
 import core.AbstractGameState;
 import core.interfaces.IStateHeuristic;
 
-public class OldSushiGoHeuristic implements IStateHeuristic {
+public class SushiGoHeuristicversion2 implements IStateHeuristic {
 
     @Override
     public double evaluateState(AbstractGameState state, int playerId) {

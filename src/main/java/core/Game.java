@@ -13,10 +13,12 @@ import gui.AbstractGUIManager;
 import gui.GUI;
 import gui.GamePanel;
 import players.basicMCTS.BasicMCTSPlayer;
-import players.basicMCTS.groupADOld.OldGroupADBasicMCTSPlayer;
+import players.basicMCTS.groupADversion1.GroupADBasicMCTSPlayerversion1;
+import players.basicMCTS.groupADversion2.GroupADBasicMCTSPlayerversion2;
 import players.human.ActionController;
 import players.human.HumanConsolePlayer;
 import players.human.HumanGUIPlayer;
+import players.mcts.MCTSPlayer;
 import utilities.Pair;
 import utilities.Utils;
 
@@ -700,7 +702,9 @@ public class Game {
         ArrayList<AbstractPlayer> players = new ArrayList<>();
         //players.add(new RandomPlayer());
         //players.add(new RandomPlayer());
-        players.add(new OldGroupADBasicMCTSPlayer());
+        players.add(new MCTSPlayer());
+        players.add(new GroupADBasicMCTSPlayerversion1());
+        players.add(new GroupADBasicMCTSPlayerversion2());
         players.add(new BasicMCTSPlayer());
        //players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());

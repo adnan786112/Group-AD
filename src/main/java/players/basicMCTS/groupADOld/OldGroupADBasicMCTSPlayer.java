@@ -20,11 +20,10 @@ public class OldGroupADBasicMCTSPlayer extends BasicMCTSPlayer {
         super(seed);
         getParameters().setRandomSeed(seed);
         localRnd = new Random(seed);
-
         BasicMCTSParams p = getParameters();
         p.K = Math.sqrt(2);
-        p.rolloutLength = 10;
-        p.maxTreeDepth = 6;
+        p.rolloutLength = 12;
+        p.maxTreeDepth = 7;
         p.epsilon = 1e-6;
     }
 
@@ -49,8 +48,10 @@ public class OldGroupADBasicMCTSPlayer extends BasicMCTSPlayer {
     }
 
     @Override
-    public AbstractAction _getAction(AbstractGameState gameState, java.util.List<AbstractAction> actions) {
-        return super._getAction(gameState, actions);
+    public AbstractAction _getAction(AbstractGameState gameState, List<AbstractAction> actions) {
+        BasicTreeNodeX root = new BasicTreeNodeX(this, null, gameState, new Random(getParameters().getRandomSeed()));
+        root.mctsSearch();
+        return root.bestAction();
     }
 
     @Override

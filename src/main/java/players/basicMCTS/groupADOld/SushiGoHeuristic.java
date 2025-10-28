@@ -1,4 +1,4 @@
-package players.basicMCTS.groupAD;
+package players.basicMCTS.groupADOld;
 
 import core.AbstractGameState;
 import core.interfaces.IStateHeuristic;

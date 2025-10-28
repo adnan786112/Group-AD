@@ -1,4 +1,4 @@
-package players.basicMCTS.groupAD;
+package players.basicMCTS.groupADOld;
 
 import core.AbstractGameState;
 import core.actions.AbstractAction;
@@ -6,7 +6,6 @@ import core.interfaces.IStateHeuristic;
 import players.basicMCTS.BasicMCTSParams;
 import players.basicMCTS.BasicMCTSPlayer;
 
-import java.util.List;
 import java.util.Random;
 
 public class GroupADBasicMCTSPlayer extends BasicMCTSPlayer {

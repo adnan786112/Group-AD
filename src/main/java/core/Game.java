@@ -7,22 +7,16 @@ import core.interfaces.IPrintable;
 import core.turnorders.ReactiveTurnOrder;
 import evaluation.listeners.IGameListener;
 import evaluation.metrics.Event;
-import evaluation.summarisers.TAGNumericStatSummary;
 import games.GameType;
 import games.pandemic.PandemicForwardModel;
 import gui.AbstractGUIManager;
 import gui.GUI;
 import gui.GamePanel;
 import players.basicMCTS.BasicMCTSPlayer;
+import players.basicMCTS.groupADOld.GroupADBasicMCTSPlayer;
 import players.human.ActionController;
 import players.human.HumanConsolePlayer;
 import players.human.HumanGUIPlayer;
-import players.mcts.MCTSParams;
-import players.mcts.MCTSPlayer;
-import players.rmhc.RMHCParams;
-import players.rmhc.RMHCPlayer;
-import players.simple.OSLAPlayer;
-import players.simple.RandomPlayer;
 import utilities.Pair;
 import utilities.Utils;
 
@@ -706,10 +700,11 @@ public class Game {
         ArrayList<AbstractPlayer> players = new ArrayList<>();
         //players.add(new RandomPlayer());
         //players.add(new RandomPlayer());
+        players.add(new GroupADBasicMCTSPlayer());
         players.add(new BasicMCTSPlayer());
        //players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
-        players.add(new HumanGUIPlayer(ac));
+        //players.add(new HumanGUIPlayer(ac));
 
 
         /* Game parameter configuration. Set to null to ignore and use default parameters */

@@ -18,23 +18,23 @@ public class BasicTreeNode {
     // Parent of this node
     BasicTreeNode parent;
     // Children of this node
-    Map<AbstractAction, BasicTreeNode> children = new HashMap<>();
+    protected Map<AbstractAction, BasicTreeNode> children = new HashMap<>();
     // Depth of this node
     final int depth;
 
     // Total value of this node
-    private double totValue;
+    public double totValue;
     // Number of visits
-    private int nVisits;
+    public int nVisits;
     // Number of FM calls and State copies up until this node
     private int fmCallsCount;
     // Parameters guiding the search
-    private BasicMCTSPlayer player;
+    protected BasicMCTSPlayer player;
     private Random rnd;
     private RandomPlayer randomPlayer = new RandomPlayer();
 
     // State in this node (closed loop)
-    private AbstractGameState state;
+    protected AbstractGameState state;
 
     protected BasicTreeNode(BasicMCTSPlayer player, BasicTreeNode parent, AbstractGameState state, Random rnd) {
         this.player = player;
@@ -177,7 +177,7 @@ public class BasicTreeNode {
      * @param gs  - current game state
      * @param act - action to apply
      */
-    private void advance(AbstractGameState gs, AbstractAction act) {
+    protected void advance(AbstractGameState gs, AbstractAction act) {
         player.getForwardModel().next(gs, act);
         root.fmCallsCount++;
     }
@@ -258,7 +258,7 @@ public class BasicTreeNode {
      * @param depth       - current depth
      * @return - true if rollout finished, false otherwise
      */
-    private boolean finishRollout(AbstractGameState rollerState, int depth) {
+    protected boolean finishRollout(AbstractGameState rollerState, int depth) {
         if (depth >= player.getParameters().rolloutLength)
             return true;
 

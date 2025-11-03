@@ -12,13 +12,14 @@ import games.pandemic.PandemicForwardModel;
 import gui.AbstractGUIManager;
 import gui.GUI;
 import gui.GamePanel;
+import players.basicMCTS.BasicMCTSParams;
 import players.basicMCTS.BasicMCTSPlayer;
 import players.basicMCTS.groupADversion1.GroupADBasicMCTSPlayerversion1;
 import players.basicMCTS.groupADversion2.GroupADBasicMCTSPlayerversion2;
+import players.basicMCTS.groupADversion3.GroupADBasicMCTSPlayerversion3;
 import players.human.ActionController;
 import players.human.HumanConsolePlayer;
 import players.human.HumanGUIPlayer;
-import players.mcts.MCTSPlayer;
 import utilities.Pair;
 import utilities.Utils;
 
@@ -702,10 +703,12 @@ public class Game {
         ArrayList<AbstractPlayer> players = new ArrayList<>();
         //players.add(new RandomPlayer());
         //players.add(new RandomPlayer());
-        players.add(new MCTSPlayer());
+        //players.add(new MCTSPlayer());
+        players.add(new BasicMCTSPlayer());
         players.add(new GroupADBasicMCTSPlayerversion1());
         players.add(new GroupADBasicMCTSPlayerversion2());
-        players.add(new BasicMCTSPlayer());
+        players.add(new GroupADBasicMCTSPlayerversion3());
+
        //players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
         //players.add(new HumanGUIPlayer(ac));

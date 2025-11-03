@@ -16,11 +16,11 @@ public class BasicTreeNode {
     // Root node of tree
     BasicTreeNode root;
     // Parent of this node
-    BasicTreeNode parent;
+    protected BasicTreeNode parent;
     // Children of this node
     protected Map<AbstractAction, BasicTreeNode> children = new HashMap<>();
     // Depth of this node
-    final int depth;
+    protected final int depth;
 
     // Total value of this node
     public double totValue;
@@ -144,7 +144,7 @@ public class BasicTreeNode {
     /**
      * @return A list of the unexpanded Actions from this State
      */
-    private List<AbstractAction> unexpandedActions() {
+    public List<AbstractAction> unexpandedActions() {
         return children.keySet().stream().filter(a -> children.get(a) == null).collect(toList());
     }
 
@@ -232,7 +232,7 @@ public class BasicTreeNode {
      *
      * @return - value of rollout.
      */
-    private double rollOut() {
+    protected double rollOut() {
         int rolloutDepth = 0; // counting from end of tree
 
         // If rollouts are enabled, select actions for the rollout in line with the rollout policy
@@ -271,7 +271,7 @@ public class BasicTreeNode {
      *
      * @param result - value of rollout to backup
      */
-    private void backUp(double result) {
+    protected void backUp(double result) {
         BasicTreeNode n = this;
         while (n != null) {
             n.nVisits++;

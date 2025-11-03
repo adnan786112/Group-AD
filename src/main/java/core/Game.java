@@ -17,6 +17,7 @@ import players.basicMCTS.BasicMCTSPlayer;
 import players.basicMCTS.groupADversion1.GroupADBasicMCTSPlayerversion1;
 import players.basicMCTS.groupADversion2.GroupADBasicMCTSPlayerversion2;
 import players.basicMCTS.groupADversion3.GroupADBasicMCTSPlayerversion3;
+import players.basicMCTS.groupADversion4.GroupADBasicMCTSPlayerversion4;
 import players.human.ActionController;
 import players.human.HumanConsolePlayer;
 import players.human.HumanGUIPlayer;
@@ -704,10 +705,11 @@ public class Game {
         //players.add(new RandomPlayer());
         //players.add(new RandomPlayer());
         //players.add(new MCTSPlayer());
-        players.add(new BasicMCTSPlayer());
+        //players.add(new BasicMCTSPlayer());
         players.add(new GroupADBasicMCTSPlayerversion1());
         players.add(new GroupADBasicMCTSPlayerversion2());
         players.add(new GroupADBasicMCTSPlayerversion3());
+        players.add(new GroupADBasicMCTSPlayerversion4());
 
        //players.add(new OSLAPlayer());
 //        players.add(new RMHCPlayer());
